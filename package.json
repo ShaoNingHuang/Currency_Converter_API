@@ -1,0 +1,20 @@
+{
+  "name": "currency_change_api",
+  "version": "1.0.0",
+  "description": "The implementation for currency converter API",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --coverage",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "supertest": "^6.3.4"
+  }
+}
