@@ -4,7 +4,7 @@
   "description": "The implementation for currency converter API",
   "main": "index.js",
   "scripts": {
-    "test": "jest --coverage",
+    "test": "jest --coverage --silent",
     "start": "node server.js"
   },
   "author": "",
