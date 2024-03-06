@@ -10,11 +10,21 @@
 const express = require('express')
 const router = express.Router()
 const currencyUtil = require('../../utils/currencyUtils')
-/*
-    GET /api/currency/convert
-    Parse the input query, if invalid, return 400
-    If valid, then try to do the conversion and format the output. If failed, return 400
-*/
+/** 
+ * @swagger 
+ * '/api/currency/convert':
+ *  get:
+ *     summary: Convert the currency
+ *     parameters:
+ *      - target: currency
+ *        in: path
+ *        description: target currency
+ *        required: true
+ *     responses:
+ *      200:
+ *        description: Successful response                 
+ */
+  
 router.get('/convert', (req, res) => {
     const source = req.query.source
     const target = req.query.target
